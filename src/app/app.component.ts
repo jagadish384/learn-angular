@@ -2,11 +2,19 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ParentComponent } from "./components/parent/parent.component";
 import { ChildComponent } from "./components/child/child.component";
+import { AddNoteComponent } from "./components/add-note/add-note.component";
+import { ListNoteComponent } from "./components/list-note/list-note.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ParentComponent, ChildComponent],
+  imports: [
+    RouterOutlet, 
+    ParentComponent, 
+    ChildComponent, 
+    AddNoteComponent, 
+    ListNoteComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
